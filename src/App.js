@@ -6,7 +6,7 @@ function App() {
   return (
     <Router>
       <GlobalStyle />
-      <Navbar />  
+      <Navbar />
     </Router>
   );
 }
