@@ -30,10 +30,11 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    showButton()
-  }, []) 
-
-  window.addEventListener('resize', showButton)
+    showButton();
+  }, []);
+  
+  //Listen saat resize
+  window.addEventListener("resize", showButton);
 
   return (
     <>
@@ -59,17 +60,17 @@ const Navbar = () => {
               </NavItem>
               <NavItemBtn>
                 {button ? (
-                  <NavBtnLink to="/sign-up">
-                    <Button primary>SIGN UP</Button>
+                  <NavBtnLink to="/download-cv">
+                    <Button primary>Download CV</Button>
                   </NavBtnLink>
                 ) : (
-                  <NavBtnLink to="/sign-up">
+                  <NavBtnLink to="/download-cv">
                     <Button
                       // onClick={closeMobileMenu}
                       fontBig
                       primary
                     >
-                      SIGN UP
+                      Download CV
                     </Button>
                   </NavBtnLink>
                 )}
